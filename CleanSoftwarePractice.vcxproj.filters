@@ -13,12 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Transactions">
+      <UniqueIdentifier>{bd8edd57-e1b0-4921-abc2-185f2fb7aa38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classification">
+      <UniqueIdentifier>{25ce62a0-3611-4f86-bd76-d353668084a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Schedules">
+      <UniqueIdentifier>{ff7b93d1-c4f0-4150-80f9-456b4d0e06c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Methods">
+      <UniqueIdentifier>{ccb6089c-7001-4116-98be-e9970f88a290}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CleanSoftwarePractice.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Transaction.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="PayrollTest.cpp">
@@ -30,20 +39,35 @@
     <ClCompile Include="Employee.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="AddEmployeeTransaction.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Transaction.cpp">
+      <Filter>Transactions</Filter>
     </ClCompile>
-    <ClCompile Include="HoldMethod.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="AddEmployeeTransaction.cpp">
+      <Filter>Transactions</Filter>
     </ClCompile>
     <ClCompile Include="PaymentMethod.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>Methods</Filter>
+    </ClCompile>
+    <ClCompile Include="SalariedClassification.cpp">
+      <Filter>Classification</Filter>
+    </ClCompile>
+    <ClCompile Include="PaymentClassification.cpp">
+      <Filter>Classification</Filter>
+    </ClCompile>
+    <ClCompile Include="PaymentSchedule.cpp">
+      <Filter>Schedules</Filter>
+    </ClCompile>
+    <ClCompile Include="MonthlySchedule.cpp">
+      <Filter>Schedules</Filter>
+    </ClCompile>
+    <ClCompile Include="HoldMethod.cpp">
+      <Filter>Methods</Filter>
+    </ClCompile>
+    <ClCompile Include="AddSalariedEmployee.cpp">
+      <Filter>Transactions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Transaction.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="PayrollTest.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -54,13 +78,31 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="AddEmployeeTransaction.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>Transactions</Filter>
     </ClInclude>
-    <ClInclude Include="HoldMethod.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Transaction.h">
+      <Filter>Transactions</Filter>
     </ClInclude>
     <ClInclude Include="PaymentMethod.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="SalariedClassification.h">
+      <Filter>Classification</Filter>
+    </ClInclude>
+    <ClInclude Include="PaymentClassification.h">
+      <Filter>Classification</Filter>
+    </ClInclude>
+    <ClInclude Include="PaymentSchedule.h">
+      <Filter>Schedules</Filter>
+    </ClInclude>
+    <ClInclude Include="MonthlySchedule.h">
+      <Filter>Schedules</Filter>
+    </ClInclude>
+    <ClInclude Include="HoldMethod.h">
+      <Filter>Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="AddSalariedEmployee.h">
+      <Filter>Transactions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

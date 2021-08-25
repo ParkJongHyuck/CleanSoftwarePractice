@@ -1,6 +1,8 @@
 ﻿#include <iostream>
+#include "PayrollTest.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    PayrollTest* payrollTest = new PayrollTest();
+    payrollTest->TestAddSalariedEmployee();
 }

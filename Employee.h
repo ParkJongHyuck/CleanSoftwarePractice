@@ -14,6 +14,20 @@ public:
 	void SetClassification(PaymentClassification*);
 	void SetSchedule(PaymentSchedule*);
 	void SetMethod(PaymentMethod*);
+
+	PaymentClassification* GetClassification() const;
+	PaymentSchedule* GetSchedule() const;
+	PaymentMethod* GetMethod() const;
+	string GetName() const;
+	
+private:
+	PaymentClassification* itsClassification;
+	PaymentMethod* itsMethod;
+	PaymentSchedule* itsSchedule;
+
+	int itsEmpId;
+	string itsEmpName;
+	string itsEmpAddress;
 };
 
 
