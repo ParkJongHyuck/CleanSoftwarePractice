@@ -7,6 +7,8 @@ class PayrollTest
 {
 public:
 	void TestAddSalariedEmployee();
+	void TestAddHourlyEmployee();
+	void TestAddCommissionedEmployee();
 };
 
 #endif

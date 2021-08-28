@@ -139,11 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AddCommissionedEmployee.cpp" />
     <ClCompile Include="AddEmployeeTransaction.cpp" />
+    <ClCompile Include="AddHourlyEmployee.cpp" />
     <ClCompile Include="AddSalariedEmployee.cpp" />
+    <ClCompile Include="BiweeklySchedule.cpp" />
     <ClCompile Include="CleanSoftwarePractice.cpp" />
+    <ClCompile Include="CommissionedClassification.cpp" />
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="HoldMethod.cpp" />
+    <ClCompile Include="HourlyClassification.cpp" />
     <ClCompile Include="MonthlySchedule.cpp" />
     <ClCompile Include="PaymentClassification.cpp" />
     <ClCompile Include="PaymentSchedule.cpp" />
@@ -152,12 +157,18 @@
     <ClCompile Include="PayrollTest.cpp" />
     <ClCompile Include="SalariedClassification.cpp" />
     <ClCompile Include="Transaction.cpp" />
+    <ClCompile Include="WeeklySchedule.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AddCommissionedEmployee.h" />
     <ClInclude Include="AddEmployeeTransaction.h" />
+    <ClInclude Include="AddHourlyEmployee.h" />
     <ClInclude Include="AddSalariedEmployee.h" />
+    <ClInclude Include="BiweeklySchedule.h" />
+    <ClInclude Include="CommissionedClassification.h" />
     <ClInclude Include="Employee.h" />
     <ClInclude Include="HoldMethod.h" />
+    <ClInclude Include="HourlyClassification.h" />
     <ClInclude Include="MonthlySchedule.h" />
     <ClInclude Include="PaymentClassification.h" />
     <ClInclude Include="PaymentSchedule.h" />
@@ -166,6 +177,7 @@
     <ClInclude Include="PayrollTest.h" />
     <ClInclude Include="SalariedClassification.h" />
     <ClInclude Include="Transaction.h" />
+    <ClInclude Include="WeeklySchedule.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

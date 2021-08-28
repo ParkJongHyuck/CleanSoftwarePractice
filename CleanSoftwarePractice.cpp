@@ -5,4 +5,6 @@ int main()
 {
     PayrollTest* payrollTest = new PayrollTest();
     payrollTest->TestAddSalariedEmployee();
+    payrollTest->TestAddHourlyEmployee();
+    payrollTest->TestAddCommissionedEmployee();
 }

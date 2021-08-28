@@ -66,6 +66,24 @@
     <ClCompile Include="AddSalariedEmployee.cpp">
       <Filter>Transactions</Filter>
     </ClCompile>
+    <ClCompile Include="AddHourlyEmployee.cpp">
+      <Filter>Transactions</Filter>
+    </ClCompile>
+    <ClCompile Include="WeeklySchedule.cpp">
+      <Filter>Schedules</Filter>
+    </ClCompile>
+    <ClCompile Include="BiweeklySchedule.cpp">
+      <Filter>Schedules</Filter>
+    </ClCompile>
+    <ClCompile Include="HourlyClassification.cpp">
+      <Filter>Classification</Filter>
+    </ClCompile>
+    <ClCompile Include="CommissionedClassification.cpp">
+      <Filter>Classification</Filter>
+    </ClCompile>
+    <ClCompile Include="AddCommissionedEmployee.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PayrollTest.h">
@@ -103,6 +121,24 @@
     </ClInclude>
     <ClInclude Include="AddSalariedEmployee.h">
       <Filter>Transactions</Filter>
+    </ClInclude>
+    <ClInclude Include="AddHourlyEmployee.h">
+      <Filter>Transactions</Filter>
+    </ClInclude>
+    <ClInclude Include="WeeklySchedule.h">
+      <Filter>Schedules</Filter>
+    </ClInclude>
+    <ClInclude Include="BiweeklySchedule.h">
+      <Filter>Schedules</Filter>
+    </ClInclude>
+    <ClInclude Include="HourlyClassification.h">
+      <Filter>Classification</Filter>
+    </ClInclude>
+    <ClInclude Include="CommissionedClassification.h">
+      <Filter>Classification</Filter>
+    </ClInclude>
+    <ClInclude Include="AddCommissionedEmployee.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
