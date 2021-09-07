@@ -12,6 +12,8 @@
 #include "BiweeklySchedule.h"
 #include "CommissionedClassification.h"
 #include "DeleteEmployeeTransaction.h"
+#include "TimeCardTransaction.h"
+#include "TimeCard.h"
 
 void assert(bool b)
 {
@@ -22,7 +24,7 @@ void assert(void* obj)
 {
 	assert(obj != nullptr);
 }
-void assertEquals(double a, double b, double epsilon)
+void assertEquals(double a, double b, double epsilon = 0.00001)
 {
 	assert(abs(a - b) < epsilon);
 }
@@ -119,4 +121,25 @@ void PayrollTest::TestDeleteEmployee()
 		Employee* e = GpayrollDatabase.GetEmployee(empId);
 		assert(e == 0);
 	}
+}
+
+void PayrollTest::TestTimeCardTransaction()
+{
+	cerr << "Test Time Card Transaction" << endl;
+
+	int empId = 2;
+	AddHourlyEmployee t(empId, "Bill", "Home", 15.25);
+	t.Execute();
+
+	TimeCardTransaction tct(2001'10'31, 8.0, empId);
+	tct.Execute();
+
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	assert(e);
+	PaymentClassification* pc = e->GetClassification();
+	HourlyClassification* hc = dynamic_cast<HourlyClassification*>(pc);
+	assert(hc);
+	TimeCard* tc = hc->GetTimeCard(2001'10'31);
+	assert(tc);
+	assertEquals(8.0, tc->GetHour());
 }

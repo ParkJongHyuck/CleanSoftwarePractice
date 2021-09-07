@@ -157,6 +157,8 @@
     <ClCompile Include="PaymentMethod.cpp" />
     <ClCompile Include="PayrollTest.cpp" />
     <ClCompile Include="SalariedClassification.cpp" />
+    <ClCompile Include="TimeCard.cpp" />
+    <ClCompile Include="TimeCardTransaction.cpp" />
     <ClCompile Include="Transaction.cpp" />
     <ClCompile Include="WeeklySchedule.cpp" />
   </ItemGroup>
@@ -177,7 +179,10 @@
     <ClInclude Include="PayrollDatabase.h" />
     <ClInclude Include="PaymentMethod.h" />
     <ClInclude Include="PayrollTest.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SalariedClassification.h" />
+    <ClInclude Include="TimeCard.h" />
+    <ClInclude Include="TimeCardTransaction.h" />
     <ClInclude Include="Transaction.h" />
     <ClInclude Include="WeeklySchedule.h" />
   </ItemGroup>

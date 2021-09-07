@@ -9,4 +9,5 @@ int main()
     payrollTest->TestAddCommissionedEmployee();
 
     payrollTest->TestDeleteEmployee();
+    payrollTest->TestTimeCardTransaction();
 }

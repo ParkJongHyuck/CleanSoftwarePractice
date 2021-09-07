@@ -11,6 +11,8 @@ public:
 	void TestAddCommissionedEmployee();
 
 	void TestDeleteEmployee();
+
+	void TestTimeCardTransaction();
 };
 
 #endif
