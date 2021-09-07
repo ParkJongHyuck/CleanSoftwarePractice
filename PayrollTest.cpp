@@ -11,6 +11,7 @@
 #include "AddCommissionedEmployee.h"
 #include "BiweeklySchedule.h"
 #include "CommissionedClassification.h"
+#include "DeleteEmployeeTransaction.h"
 
 void assert(bool b)
 {
@@ -99,4 +100,23 @@ void PayrollTest::TestAddCommissionedEmployee()
 	PaymentMethod* pm = e->GetMethod();
 	HoldMethod* hm = dynamic_cast<HoldMethod*>(pm);
 	assert(hm);
+}
+
+void PayrollTest::TestDeleteEmployee()
+{
+	cerr << "Test Delete Emplyee" << endl;
+
+	int empId = 3;
+	AddCommissionedEmployee t(empId, "Lance", "Home", 2500, 3.2);
+	t.Execute();
+	{
+		Employee* e = GpayrollDatabase.GetEmployee(empId);
+		assert(e);
+	}
+	DeleteEmployeeTransaction dt(empId);
+	dt.Execute();
+	{
+		Employee* e = GpayrollDatabase.GetEmployee(empId);
+		assert(e == 0);
+	}
 }

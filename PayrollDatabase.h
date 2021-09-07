@@ -10,6 +10,7 @@ public:
 	virtual ~PayrollDatabase();
 	Employee* GetEmployee(int empId);
 	void AddEmployee(int empId, Employee*);
+	void DeleteEmployee(int empId);
 	void Clear();
 private:
 	std::map<int, Employee*> itsEmployees;

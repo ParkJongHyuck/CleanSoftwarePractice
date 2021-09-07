@@ -9,6 +9,8 @@ public:
 	void TestAddSalariedEmployee();
 	void TestAddHourlyEmployee();
 	void TestAddCommissionedEmployee();
+
+	void TestDeleteEmployee();
 };
 
 #endif

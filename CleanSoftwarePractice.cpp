@@ -7,4 +7,6 @@ int main()
     payrollTest->TestAddSalariedEmployee();
     payrollTest->TestAddHourlyEmployee();
     payrollTest->TestAddCommissionedEmployee();
+
+    payrollTest->TestDeleteEmployee();
 }

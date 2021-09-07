@@ -84,6 +84,9 @@
     <ClCompile Include="AddCommissionedEmployee.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="DeleteEmployeeTransaction.cpp">
+      <Filter>Transactions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PayrollTest.h">
@@ -139,6 +142,9 @@
     </ClInclude>
     <ClInclude Include="AddCommissionedEmployee.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteEmployeeTransaction.h">
+      <Filter>Transactions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
