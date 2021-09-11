@@ -20,6 +20,11 @@ void Employee::SetMethod(PaymentMethod* method)
 	itsMethod = method;
 }
 
+void Employee::SetAffiliation(Affiliation* affiliation)
+{
+	itsAffiliation = affiliation;
+}
+
 PaymentClassification* Employee::GetClassification() const
 {
 	return itsClassification;
@@ -33,6 +38,11 @@ PaymentSchedule* Employee::GetSchedule() const
 PaymentMethod* Employee::GetMethod() const
 {
 	return itsMethod;
+}
+
+Affiliation* Employee::GetAffiliation() const
+{
+	return itsAffiliation;
 }
 
 string Employee::GetName() const

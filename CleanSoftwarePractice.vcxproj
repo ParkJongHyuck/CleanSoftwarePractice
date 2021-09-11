@@ -143,6 +143,7 @@
     <ClCompile Include="AddEmployeeTransaction.cpp" />
     <ClCompile Include="AddHourlyEmployee.cpp" />
     <ClCompile Include="AddSalariedEmployee.cpp" />
+    <ClCompile Include="Affiliation.cpp" />
     <ClCompile Include="BiweeklySchedule.cpp" />
     <ClCompile Include="CleanSoftwarePractice.cpp" />
     <ClCompile Include="CommissionedClassification.cpp" />
@@ -159,9 +160,12 @@
     <ClCompile Include="SalariedClassification.cpp" />
     <ClCompile Include="SalesReceipt.cpp" />
     <ClCompile Include="SalesReceiptTransaction.cpp" />
+    <ClCompile Include="ServiceCharge.cpp" />
+    <ClCompile Include="ServiceChargeTransaction.cpp" />
     <ClCompile Include="TimeCard.cpp" />
     <ClCompile Include="TimeCardTransaction.cpp" />
     <ClCompile Include="Transaction.cpp" />
+    <ClCompile Include="UnionAffiliation.cpp" />
     <ClCompile Include="WeeklySchedule.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +173,7 @@
     <ClInclude Include="AddEmployeeTransaction.h" />
     <ClInclude Include="AddHourlyEmployee.h" />
     <ClInclude Include="AddSalariedEmployee.h" />
+    <ClInclude Include="Affiliation.h" />
     <ClInclude Include="BiweeklySchedule.h" />
     <ClInclude Include="CommissionedClassification.h" />
     <ClInclude Include="DeleteEmployeeTransaction.h" />
@@ -182,13 +187,20 @@
     <ClInclude Include="PaymentMethod.h" />
     <ClInclude Include="PayrollTest.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
     <ClInclude Include="SalariedClassification.h" />
     <ClInclude Include="SalesReceipt.h" />
     <ClInclude Include="SalesReceiptTransaction.h" />
+    <ClInclude Include="ServiceCharge.h" />
+    <ClInclude Include="ServiceChargeTransaction.h" />
     <ClInclude Include="TimeCard.h" />
     <ClInclude Include="TimeCardTransaction.h" />
     <ClInclude Include="Transaction.h" />
+    <ClInclude Include="UnionAffiliation.h" />
     <ClInclude Include="WeeklySchedule.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CleanSoftwarePractice1.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

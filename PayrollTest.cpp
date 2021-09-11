@@ -16,7 +16,9 @@
 #include "TimeCard.h"
 #include "SalesReceiptTransaction.h"
 #include "SalesReceipt.h"
-
+#include "UnionAffiliation.h"
+#include "ServiceChargeTransaction.h"
+#include "ServiceCharge.h"
 void assert(bool b)
 {
 	static int testNumber = 0;
@@ -180,7 +182,7 @@ void PayrollTest::TestAddServiceCharge()
 	assert(e);
 
 	UnionAffiliation* af = new UnionAffiliation(12.5f);
-	e->setAffiliation(af);
+	e->SetAffiliation(af);
 
 	int memberId = 86;
 	GpayrollDatabase.AddUnionMember(memberId, e);
