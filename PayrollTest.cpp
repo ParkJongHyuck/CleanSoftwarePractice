@@ -15,6 +15,7 @@
 #include "TimeCardTransaction.h"
 #include "TimeCard.h"
 #include "SalesReceiptTransaction.h"
+#include "SalesReceipt.h"
 
 void assert(bool b)
 {
@@ -34,7 +35,7 @@ extern PayrollDatabase GpayrollDatabase;
 
 void PayrollTest::TestAddSalariedEmployee()
 {
-	std::cout << "Add Salaried Employee test" << std::endl;
+	cout << "Add Salaried Employee test" << endl;
 
 	int empId = 1;
 	AddSalariedEmployee t(empId, "Bob", "Home", 1000.00);
@@ -59,7 +60,7 @@ void PayrollTest::TestAddSalariedEmployee()
 
 void PayrollTest::TestAddHourlyEmployee()
 {
-	std::cout << "Add Hourly Employee test" << std::endl;
+	cout << "Add Hourly Employee test" << endl;
 
 	int empId = 2;
 	AddHourlyEmployee t(empId, "Tom", "Tom's Home", 40);
@@ -83,7 +84,7 @@ void PayrollTest::TestAddHourlyEmployee()
 
 void PayrollTest::TestAddCommissionedEmployee()
 {
-	std::cout << "Add Commissioned Employee Test" << std::endl;
+	cout << "Add Commissioned Employee Test" << endl;
 
 	int empId = 3;
 	AddCommissionedEmployee t(empId, "Dave", "Dave's Home", 1000, 10);
@@ -147,11 +148,13 @@ void PayrollTest::TestTimeCardTransaction()
 
 void PayrollTest::TestSalesReceiptTransaction()
 {
+	cerr << "Test Sales Receipt Transaction" << endl;
 	int empId = 4;
+	long date = 2021'09'11;
 	AddCommissionedEmployee t(empId, "Mac", "Green Home", 1000, 10);
 	t.Execute();
 
-	SalesReceiptTransaction srt(empId, 2021'09'11, 10);
+	SalesReceiptTransaction srt(empId, date, 10);
 	srt.Execute();
 
 	Employee* e = GpayrollDatabase.GetEmployee(empId);
@@ -160,5 +163,7 @@ void PayrollTest::TestSalesReceiptTransaction()
 	CommissionedClassification* cc = dynamic_cast<CommissionedClassification*>(pc);
 	assert(cc);
 
-	
+	SalesReceipt* sr = cc->GetReceipt(date);
+	assert(sr);
+	assertEquals(sr->GetAmount(), 10);
 }

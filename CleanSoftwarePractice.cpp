@@ -15,4 +15,6 @@ int main()
     std::cout << std::endl;
     payrollTest->TestTimeCardTransaction();
     std::cout << std::endl;
+    payrollTest->TestSalesReceiptTransaction();
+    std::cout << std::endl;
 }
