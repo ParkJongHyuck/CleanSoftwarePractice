@@ -14,6 +14,7 @@ public:
 
 	void TestTimeCardTransaction();
 	void TestSalesReceiptTransaction();
+	void TestAddServiceCharge();
 };
 
 #endif

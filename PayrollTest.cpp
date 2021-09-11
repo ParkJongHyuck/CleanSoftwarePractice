@@ -167,3 +167,27 @@ void PayrollTest::TestSalesReceiptTransaction()
 	assert(sr);
 	assertEquals(sr->GetAmount(), 10);
 }
+
+void PayrollTest::TestAddServiceCharge()
+{
+	cerr << "Test Add Service Charge" << endl;
+
+	int empId = 2;
+	AddHourlyEmployee t(empId, "Bill", "Home", 15.25f);
+	t.Execute();
+
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	assert(e);
+
+	UnionAffiliation* af = new UnionAffiliation(12.5f);
+	e->setAffiliation(af);
+
+	int memberId = 86;
+	GpayrollDatabase.AddUnionMember(memberId, e);
+	ServiceChargeTransaction sct(memberId, 2001'11'01, 12.95f);
+	sct.Execute();
+
+	ServiceCharge* sc = af->GetServiceCharge(2001'11'01);
+	assert(sc);
+	assertEquals(12.95f, sc->GetAmount(), .001);
+}
