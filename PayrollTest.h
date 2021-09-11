@@ -13,6 +13,7 @@ public:
 	void TestDeleteEmployee();
 
 	void TestTimeCardTransaction();
+	void TestSalesReceiptTransaction();
 };
 
 #endif

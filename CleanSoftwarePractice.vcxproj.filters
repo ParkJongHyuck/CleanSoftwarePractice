@@ -21,6 +21,15 @@
     <Filter Include="Methods">
       <UniqueIdentifier>{ccb6089c-7001-4116-98be-e9970f88a290}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Transactions\AddEmployee">
+      <UniqueIdentifier>{5177a88b-532e-4b14-863a-1cda72f2fb4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transactions\DeleteEmployee">
+      <UniqueIdentifier>{7db97b6d-0150-418a-9a12-47f9e8bb6657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Types">
+      <UniqueIdentifier>{b1f3dd21-ed42-4cb9-8f78-71362bbfd91e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CleanSoftwarePractice.cpp">
@@ -36,9 +45,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Transaction.cpp">
-      <Filter>Transactions</Filter>
-    </ClCompile>
-    <ClCompile Include="AddEmployeeTransaction.cpp">
       <Filter>Transactions</Filter>
     </ClCompile>
     <ClCompile Include="PaymentMethod.cpp">
@@ -59,12 +65,6 @@
     <ClCompile Include="HoldMethod.cpp">
       <Filter>Methods</Filter>
     </ClCompile>
-    <ClCompile Include="AddSalariedEmployee.cpp">
-      <Filter>Transactions</Filter>
-    </ClCompile>
-    <ClCompile Include="AddHourlyEmployee.cpp">
-      <Filter>Transactions</Filter>
-    </ClCompile>
     <ClCompile Include="WeeklySchedule.cpp">
       <Filter>Schedules</Filter>
     </ClCompile>
@@ -80,14 +80,29 @@
     <ClCompile Include="AddCommissionedEmployee.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DeleteEmployeeTransaction.cpp">
-      <Filter>Transactions</Filter>
-    </ClCompile>
     <ClCompile Include="TimeCardTransaction.cpp">
       <Filter>Transactions</Filter>
     </ClCompile>
+    <ClCompile Include="AddEmployeeTransaction.cpp">
+      <Filter>Transactions\AddEmployee</Filter>
+    </ClCompile>
+    <ClCompile Include="AddHourlyEmployee.cpp">
+      <Filter>Transactions\AddEmployee</Filter>
+    </ClCompile>
+    <ClCompile Include="AddSalariedEmployee.cpp">
+      <Filter>Transactions\AddEmployee</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteEmployeeTransaction.cpp">
+      <Filter>Transactions\DeleteEmployee</Filter>
+    </ClCompile>
+    <ClCompile Include="SalesReceiptTransaction.cpp">
+      <Filter>Transactions</Filter>
+    </ClCompile>
     <ClCompile Include="TimeCard.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="SalesReceipt.cpp">
+      <Filter>Types</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -99,9 +114,6 @@
     </ClInclude>
     <ClInclude Include="Employee.h">
       <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="AddEmployeeTransaction.h">
-      <Filter>Transactions</Filter>
     </ClInclude>
     <ClInclude Include="Transaction.h">
       <Filter>Transactions</Filter>
@@ -124,12 +136,6 @@
     <ClInclude Include="HoldMethod.h">
       <Filter>Methods</Filter>
     </ClInclude>
-    <ClInclude Include="AddSalariedEmployee.h">
-      <Filter>Transactions</Filter>
-    </ClInclude>
-    <ClInclude Include="AddHourlyEmployee.h">
-      <Filter>Transactions</Filter>
-    </ClInclude>
     <ClInclude Include="WeeklySchedule.h">
       <Filter>Schedules</Filter>
     </ClInclude>
@@ -145,17 +151,32 @@
     <ClInclude Include="AddCommissionedEmployee.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DeleteEmployeeTransaction.h">
-      <Filter>Transactions</Filter>
-    </ClInclude>
     <ClInclude Include="TimeCardTransaction.h">
       <Filter>Transactions</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="AddEmployeeTransaction.h">
+      <Filter>Transactions\AddEmployee</Filter>
+    </ClInclude>
+    <ClInclude Include="AddHourlyEmployee.h">
+      <Filter>Transactions\AddEmployee</Filter>
+    </ClInclude>
+    <ClInclude Include="AddSalariedEmployee.h">
+      <Filter>Transactions\AddEmployee</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteEmployeeTransaction.h">
+      <Filter>Transactions\DeleteEmployee</Filter>
+    </ClInclude>
+    <ClInclude Include="SalesReceiptTransaction.h">
+      <Filter>Transactions</Filter>
+    </ClInclude>
     <ClInclude Include="TimeCard.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="SalesReceipt.h">
+      <Filter>Types</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

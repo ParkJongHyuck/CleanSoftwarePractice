@@ -14,6 +14,7 @@
 #include "DeleteEmployeeTransaction.h"
 #include "TimeCardTransaction.h"
 #include "TimeCard.h"
+#include "SalesReceiptTransaction.h"
 
 void assert(bool b)
 {
@@ -142,4 +143,22 @@ void PayrollTest::TestTimeCardTransaction()
 	TimeCard* tc = hc->GetTimeCard(2001'10'31);
 	assert(tc);
 	assertEquals(8.0, tc->GetHour());
+}
+
+void PayrollTest::TestSalesReceiptTransaction()
+{
+	int empId = 4;
+	AddCommissionedEmployee t(empId, "Mac", "Green Home", 1000, 10);
+	t.Execute();
+
+	SalesReceiptTransaction srt(empId, 2021'09'11, 10);
+	srt.Execute();
+
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	assert(e);
+	PaymentClassification* pc = e->GetClassification();
+	CommissionedClassification* cc = dynamic_cast<CommissionedClassification*>(pc);
+	assert(cc);
+
+	
 }
