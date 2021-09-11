@@ -11,13 +11,7 @@ PayrollDatabase::~PayrollDatabase()
 
 Employee* PayrollDatabase::GetEmployee(int empId)
 {
-	Employee* e = itsEmployees[empId];
-	if (e == nullptr)
-	{
-		std::cout << "Invalied EmpId : " << empId << std::endl;
-		return nullptr;
-	}
-	return e;
+	return itsEmployees[empId];
 }
 
 void PayrollDatabase::AddEmployee(int empId, Employee* e)

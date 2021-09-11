@@ -111,7 +111,7 @@ void PayrollTest::TestDeleteEmployee()
 	cerr << "Test Delete Emplyee" << endl;
 
 	int empId = 3;
-	AddCommissionedEmployee t(empId, "Lance", "Home", 2500, 3.2);
+	AddCommissionedEmployee t(empId, "Lance", "Home", 2500, 3.2f);
 	t.Execute();
 	{
 		Employee* e = GpayrollDatabase.GetEmployee(empId);
@@ -130,7 +130,7 @@ void PayrollTest::TestTimeCardTransaction()
 	cerr << "Test Time Card Transaction" << endl;
 
 	int empId = 2;
-	AddHourlyEmployee t(empId, "Bill", "Home", 15.25);
+	AddHourlyEmployee t(empId, "Bill", "Home", 15.25f);
 	t.Execute();
 
 	TimeCardTransaction tct(2001'10'31, 8.0, empId);

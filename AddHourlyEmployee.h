@@ -5,13 +5,13 @@
 class AddHourlyEmployee : public AddEmployeeTransaction
 {
 public:
-	AddHourlyEmployee(int empId, string name, string address, int hourlyRate) :
+	AddHourlyEmployee(int empId, string name, string address, float hourlyRate) :
 		AddEmployeeTransaction(empId, name, address), itsHourlyRate(hourlyRate)
 	{}
 	virtual PaymentClassification* GetClassification() const;
 	virtual PaymentSchedule* GetSchedule() const;
 private:
-	int itsHourlyRate;
+	float itsHourlyRate;
 };
 
 #endif

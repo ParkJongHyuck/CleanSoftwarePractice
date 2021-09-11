@@ -6,14 +6,14 @@
 class AddCommissionedEmployee : public AddEmployeeTransaction
 {
 public:
-	AddCommissionedEmployee(int empId, string name, string address, int salary, int commissionRate) :
+	AddCommissionedEmployee(int empId, string name, string address, int salary, float commissionRate) :
 		AddEmployeeTransaction(empId,name,address), itsSalary(salary), itsCommissionRate(commissionRate)
 	{}
 	virtual PaymentClassification* GetClassification() const;
 	virtual PaymentSchedule* GetSchedule() const;
 private:
 	int itsSalary;
-	int itsCommissionRate;
+	float itsCommissionRate;
 };
 
 #endif
