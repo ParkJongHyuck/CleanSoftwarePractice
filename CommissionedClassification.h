@@ -13,6 +13,7 @@ public:
 	virtual ~CommissionedClassification();
 
 	SalesReceipt* GetReceipt(long date);
+	void AddReceipt(SalesReceipt* receipt);
 private:
 	std::vector<SalesReceipt*> itsReceipts;
 };

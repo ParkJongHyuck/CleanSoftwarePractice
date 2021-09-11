@@ -25,3 +25,8 @@ SalesReceipt* CommissionedClassification::GetReceipt(long date)
         return *retval;
     }
 }
+
+void CommissionedClassification::AddReceipt(SalesReceipt* receipt)
+{
+    itsReceipts.emplace_back(receipt);
+}

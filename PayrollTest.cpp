@@ -154,7 +154,7 @@ void PayrollTest::TestSalesReceiptTransaction()
 	AddCommissionedEmployee t(empId, "Mac", "Green Home", 1000, 10);
 	t.Execute();
 
-	SalesReceiptTransaction srt(empId, date, 10);
+	SalesReceiptTransaction srt(date, 10, empId);
 	srt.Execute();
 
 	Employee* e = GpayrollDatabase.GetEmployee(empId);

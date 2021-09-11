@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "PayrollDatabase.h"
 #include "Employee.h"
 
@@ -9,7 +11,13 @@ PayrollDatabase::~PayrollDatabase()
 
 Employee* PayrollDatabase::GetEmployee(int empId)
 {
-	return itsEmployees[empId];
+	Employee* e = itsEmployees[empId];
+	if (e == nullptr)
+	{
+		std::cout << "Invalied EmpId : " << empId << std::endl;
+		return nullptr;
+	}
+	return e;
 }
 
 void PayrollDatabase::AddEmployee(int empId, Employee* e)
