@@ -18,6 +18,8 @@ public:
 
 	ServiceCharge* GetServiceCharge(long date);
 
+	void AddServiceCharge(long date, float charge);
+
 private:
 	float itsCharge;
 	std::vector<ServiceCharge*> itsServiceCharges;

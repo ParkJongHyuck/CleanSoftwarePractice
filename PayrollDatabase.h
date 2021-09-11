@@ -9,6 +9,7 @@ class PayrollDatabase
 public:
 	virtual ~PayrollDatabase();
 	Employee* GetEmployee(int empId);
+	Employee* GetMember(int memberId);
 	void AddEmployee(int empId, Employee*);
 	void AddUnionMember(int memberId, Employee* e);
 	void DeleteEmployee(int empId);

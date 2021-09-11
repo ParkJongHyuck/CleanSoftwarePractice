@@ -14,6 +14,11 @@ Employee* PayrollDatabase::GetEmployee(int empId)
 	return itsEmployees[empId];
 }
 
+Employee* PayrollDatabase::GetMember(int memberId)
+{
+	return itsMembers[memberId];
+}
+
 void PayrollDatabase::AddEmployee(int empId, Employee* e)
 {
 	itsEmployees[empId] = e;
