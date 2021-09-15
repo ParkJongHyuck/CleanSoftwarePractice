@@ -4,7 +4,7 @@
 
 PaymentClassification* AddCommissionedEmployee::GetClassification() const
 {
-    return new CommissionedClassification();
+    return new CommissionedClassification(itsSalary, itsCommissionRate);
 }
 
 PaymentSchedule* AddCommissionedEmployee::GetSchedule() const

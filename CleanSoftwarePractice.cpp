@@ -28,4 +28,6 @@ int main()
     std::cout << std::endl;
     payrollTest->TestChangeSalariedTransaction();
     std::cout << std::endl;
+    payrollTest->TestChangeCommissionedTransaction();
+    std::cout << std::endl;
 }

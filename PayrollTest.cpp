@@ -23,6 +23,7 @@
 #include "ChangeAddressTransaction.h"
 #include "ChangeHourlyTransaction.h"
 #include "ChangeSalariedTransaction.h"
+#include "ChangeCommissionedTransaction.h"
 
 void assert(bool b)
 {

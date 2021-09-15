@@ -147,6 +147,7 @@
     <ClCompile Include="BiweeklySchedule.cpp" />
     <ClCompile Include="ChangeAddressTransaction.cpp" />
     <ClCompile Include="ChangeClassificationTransaction.cpp" />
+    <ClCompile Include="ChangeCommissionedTransaction.cpp" />
     <ClCompile Include="ChangeEmployeeTransaction.cpp" />
     <ClCompile Include="ChangeHourlyTransaction.cpp" />
     <ClCompile Include="ChangeNameTransaction.cpp" />
@@ -183,6 +184,7 @@
     <ClInclude Include="BiweeklySchedule.h" />
     <ClInclude Include="ChangeAddressTransaction.h" />
     <ClInclude Include="ChangeClassificationTransaction.h" />
+    <ClInclude Include="ChangeCommissionedTransaction.h" />
     <ClInclude Include="ChangeEmployeeTransaction.h" />
     <ClInclude Include="ChangeHourlyTransaction.h" />
     <ClInclude Include="ChangeNameTransaction.h" />
