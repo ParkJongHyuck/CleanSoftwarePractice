@@ -303,3 +303,29 @@ void PayrollTest::TestChangeCommissionedTransaction()
 	BiweeklySchedule* bs = dynamic_cast<BiweeklySchedule*>(ps);
 	assert(bs);
 }
+
+void PayrollTest::TestChangeDirectTransaction()
+{
+	cerr << "Test Change Direct Transaction" << endl;
+
+	int empId = 6;
+	AddSalariedEmployee t(empId, "Bill", "Home", 1000);
+	t.Execute();
+	
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	{
+		PaymentMethod* pm = e->GetMethod();
+		assert(pm);
+		HoldMethod* hm = dynamic_cast<HoldMethod*>(pm);
+		assert(hm);
+	}
+	ChangeDirectTransaction cdt(empId);
+	cdt.Execute();
+
+	{
+		PaymentMethod* pm = e->GetMethod();
+		assert(pm);
+		DirectMethod* dm = dynamic_cast<DirectMethod*>(pm);
+		assert(dm);
+	}
+}
