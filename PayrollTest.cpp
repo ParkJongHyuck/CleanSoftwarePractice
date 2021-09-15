@@ -222,8 +222,31 @@ void PayrollTest::TestChangeAddressTransaction()
 
 	ChangeAddressTransaction cat(empId, "Green House");
 	cat.Execute();
-
+	
 	Employee* e = GpayrollDatabase.GetEmployee(empId);
 	assert(e);
 	assert("Green House" == e->GetAddress());
+}
+
+void PayrollTest::TestChangeHourlyTransaction()
+{
+
+	cerr << "Test Change Hourly Transaction" << endl;
+
+	int empId = 3;
+	AddCommissionedEmployee t(empId, "Lance", "Home", 2500, 3.2);
+	t.Execute();
+	ChangeHourlyTransaction cht(empId, 27.52);
+	cht.Execute();
+
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	assert(e);
+	PaymentClassification* pc = e->GetClassification();
+	assert(pc);
+	HourlyClassification* hc = dynamic_cast<HourlyClassification*>(pc);
+	assert(hc);
+	assertEquals(27.52, hc->GetRate(), .001);
+	PaymentSchedule* ps = e->GetSchedule();
+	WeeklySchedule* ws = dynamic_cast<WeeklySchedule*>(ps);
+	assert(ws);
 }
