@@ -30,4 +30,7 @@ int main()
     std::cout << std::endl;
     payrollTest->TestChangeCommissionedTransaction();
     std::cout << std::endl;
+
+    payrollTest->TestChangeDirectTransaction();
+    std::cout << std::endl;
 }

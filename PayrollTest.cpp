@@ -24,6 +24,8 @@
 #include "ChangeHourlyTransaction.h"
 #include "ChangeSalariedTransaction.h"
 #include "ChangeCommissionedTransaction.h"
+#include "ChangeDirectTransaction.h"
+#include "DirectMethod.h"
 
 void assert(bool b)
 {

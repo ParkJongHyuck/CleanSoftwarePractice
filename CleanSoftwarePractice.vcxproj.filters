@@ -36,6 +36,15 @@
     <Filter Include="Transactions\ChangeEmployee">
       <UniqueIdentifier>{c697b12d-7bc8-4ddf-a6dd-2829400255de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Transactions\ChangeEmployee\EmployeeInformation">
+      <UniqueIdentifier>{336f7076-8009-49e1-a4ae-ef113fcfcd98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transactions\ChangeEmployee\Classification">
+      <UniqueIdentifier>{209db5a4-b66b-4fed-80f7-faf0f3f72160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transactions\ChangeEmployee\Method">
+      <UniqueIdentifier>{33085f85-67ac-4276-9aff-8394c0bdec4a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CleanSoftwarePractice.cpp">
@@ -45,9 +54,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="PayrollDatabase.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Employee.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Transaction.cpp">
@@ -122,26 +128,38 @@
     <ClCompile Include="ServiceCharge.cpp">
       <Filter>Types</Filter>
     </ClCompile>
-    <ClCompile Include="ChangeNameTransaction.cpp">
-      <Filter>Transactions\ChangeEmployee</Filter>
-    </ClCompile>
-    <ClCompile Include="ChangeEmployeeTransaction.cpp">
-      <Filter>Transactions\ChangeEmployee</Filter>
-    </ClCompile>
     <ClCompile Include="ChangeAddressTransaction.cpp">
-      <Filter>Transactions\ChangeEmployee</Filter>
+      <Filter>Transactions\ChangeEmployee\EmployeeInformation</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeNameTransaction.cpp">
+      <Filter>Transactions\ChangeEmployee\EmployeeInformation</Filter>
     </ClCompile>
     <ClCompile Include="ChangeClassificationTransaction.cpp">
-      <Filter>Transactions\ChangeEmployee</Filter>
-    </ClCompile>
-    <ClCompile Include="ChangeHourlyTransaction.cpp">
-      <Filter>Transactions\ChangeEmployee</Filter>
-    </ClCompile>
-    <ClCompile Include="ChangeSalariedTransaction.cpp">
-      <Filter>Transactions\ChangeEmployee</Filter>
+      <Filter>Transactions\ChangeEmployee\Classification</Filter>
     </ClCompile>
     <ClCompile Include="ChangeCommissionedTransaction.cpp">
-      <Filter>Transactions\ChangeEmployee</Filter>
+      <Filter>Transactions\ChangeEmployee\Classification</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeEmployeeTransaction.cpp">
+      <Filter>Transactions\ChangeEmployee\Classification</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeHourlyTransaction.cpp">
+      <Filter>Transactions\ChangeEmployee\Classification</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeSalariedTransaction.cpp">
+      <Filter>Transactions\ChangeEmployee\Classification</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeMethodTransaction.cpp">
+      <Filter>Transactions\ChangeEmployee\Method</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeDirectTransaction.cpp">
+      <Filter>Transactions\ChangeEmployee\Method</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectMethod.cpp">
+      <Filter>Methods</Filter>
+    </ClCompile>
+    <ClCompile Include="Employee.cpp">
+      <Filter>Types</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -149,9 +167,6 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="PayrollDatabase.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Employee.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Transaction.h">
@@ -232,26 +247,38 @@
     <ClInclude Include="ServiceCharge.h">
       <Filter>Types</Filter>
     </ClInclude>
-    <ClInclude Include="ChangeNameTransaction.h">
-      <Filter>Transactions\ChangeEmployee</Filter>
-    </ClInclude>
-    <ClInclude Include="ChangeEmployeeTransaction.h">
-      <Filter>Transactions\ChangeEmployee</Filter>
-    </ClInclude>
     <ClInclude Include="ChangeAddressTransaction.h">
-      <Filter>Transactions\ChangeEmployee</Filter>
+      <Filter>Transactions\ChangeEmployee\EmployeeInformation</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeNameTransaction.h">
+      <Filter>Transactions\ChangeEmployee\EmployeeInformation</Filter>
     </ClInclude>
     <ClInclude Include="ChangeClassificationTransaction.h">
-      <Filter>Transactions\ChangeEmployee</Filter>
-    </ClInclude>
-    <ClInclude Include="ChangeHourlyTransaction.h">
-      <Filter>Transactions\ChangeEmployee</Filter>
-    </ClInclude>
-    <ClInclude Include="ChangeSalariedTransaction.h">
-      <Filter>Transactions\ChangeEmployee</Filter>
+      <Filter>Transactions\ChangeEmployee\Classification</Filter>
     </ClInclude>
     <ClInclude Include="ChangeCommissionedTransaction.h">
-      <Filter>Transactions\ChangeEmployee</Filter>
+      <Filter>Transactions\ChangeEmployee\Classification</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeEmployeeTransaction.h">
+      <Filter>Transactions\ChangeEmployee\Classification</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeHourlyTransaction.h">
+      <Filter>Transactions\ChangeEmployee\Classification</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeSalariedTransaction.h">
+      <Filter>Transactions\ChangeEmployee\Classification</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeMethodTransaction.h">
+      <Filter>Transactions\ChangeEmployee\Method</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeDirectTransaction.h">
+      <Filter>Transactions\ChangeEmployee\Method</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectMethod.h">
+      <Filter>Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="Employee.h">
+      <Filter>Types</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
