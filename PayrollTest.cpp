@@ -270,9 +270,35 @@ void PayrollTest::TestChangeSalariedTransaction()
 	assert(pc);
 	SalariedClassification* sc = dynamic_cast<SalariedClassification*>(pc);
 	assert(sc);
+	assertEquals(sc->GetSalary(), 1200);
 
 	PaymentSchedule* ps = e->GetSchedule();
 	assert(ps);
 	MonthlySchedule* ms = dynamic_cast<MonthlySchedule*>(ps);
 	assert(ms);
+}
+
+void PayrollTest::TestChangeCommissionedTransaction()
+{
+	cerr << "Test Change Commissioned Transaction" << endl;
+
+	int empId = 5;
+	AddSalariedEmployee t(empId, "Kong", "Home", 1500);
+	t.Execute();
+
+	ChangeCommissionedTransaction cct(empId, 1600.f, 4.2f);
+	cct.Execute();
+
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	assert(e);
+
+	PaymentClassification* pc = e->GetClassification();
+	assert(pc);
+	CommissionedClassification* cc = dynamic_cast<CommissionedClassification*>(pc);
+	assert(cc);
+	
+	PaymentSchedule* ps = e->GetSchedule();
+	assert(ps);
+	BiweeklySchedule* bs = dynamic_cast<BiweeklySchedule*>(ps);
+	assert(bs);
 }

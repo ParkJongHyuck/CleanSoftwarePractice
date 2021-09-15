@@ -21,6 +21,7 @@ public:
 
 	void TestChangeHourlyTransaction();
 	void TestChangeSalariedTransaction();
+	void TestChangeCommissionedTransaction();
 };
 
 #endif
