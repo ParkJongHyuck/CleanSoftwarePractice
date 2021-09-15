@@ -193,3 +193,18 @@ void PayrollTest::TestAddServiceCharge()
 	assert(sc);
 	assertEquals(12.95f, sc->GetAmount(), .001);
 }
+
+void PayrollTest::TestChangeNameTransaction()
+{
+	cerr << "Test Change Name Transaction" << endl;
+
+	int empId = 2;
+	AddHourlyEmployee t(empId, "Bill", "Home", 15.25f);
+	t.Execute();
+
+	ChangeNameTransaction cnt(empId, "Bob");
+	cnt.Execute();
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	assert(e);
+	assert("Bob" == e->GetName());
+}
