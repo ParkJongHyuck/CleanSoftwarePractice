@@ -30,6 +30,11 @@ void Employee::SetName(string name)
 	itsEmpName = name;
 }
 
+void Employee::SetAddress(string address)
+{
+	itsEmpAddress = address;
+}
+
 PaymentClassification* Employee::GetClassification() const
 {
 	return itsClassification;
@@ -53,4 +58,9 @@ Affiliation* Employee::GetAffiliation() const
 string Employee::GetName() const
 {
 	return itsEmpName;
+}
+
+string Employee::GetAddress() const
+{
+	return itsEmpAddress;
 }

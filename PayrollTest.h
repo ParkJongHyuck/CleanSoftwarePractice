@@ -17,6 +17,7 @@ public:
 	void TestAddServiceCharge();
 
 	void TestChangeNameTransaction();
+	void TestChangeAddressTransaction();
 };
 
 #endif

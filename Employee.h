@@ -17,12 +17,14 @@ public:
 	void SetMethod(PaymentMethod*);
 	void SetAffiliation(Affiliation*);
 	void SetName(string name);
+	void SetAddress(string address);
 
 	PaymentClassification* GetClassification() const;
 	PaymentSchedule* GetSchedule() const;
 	PaymentMethod* GetMethod() const;
 	Affiliation* GetAffiliation() const;
 	string GetName() const;
+	string GetAddress()const;
 	
 private:
 	PaymentClassification* itsClassification;

@@ -210,3 +210,19 @@ void PayrollTest::TestChangeNameTransaction()
 	assert(e);
 	assert("Bob" == e->GetName());
 }
+
+void PayrollTest::TestChangeAddressTransaction()
+{
+	cerr << "Test Change Address Transaction" << endl;
+
+	int empId = 3;
+	AddCommissionedEmployee t(empId, "Sue", "Blue House", 1200, 12);
+	t.Execute();
+
+	ChangeAddressTransaction cat(empId, "Green House");
+	cat.Execute();
+
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	assert(e);
+	assert("Green House" == e->GetAddress());
+}
