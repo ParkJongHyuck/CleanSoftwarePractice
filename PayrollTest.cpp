@@ -26,6 +26,8 @@
 #include "ChangeCommissionedTransaction.h"
 #include "ChangeDirectTransaction.h"
 #include "DirectMethod.h"
+#include "ChangeMailTransaction.h"
+#include "MailMethod.h"
 
 void assert(bool b)
 {
@@ -329,5 +331,31 @@ void PayrollTest::TestChangeDirectTransaction()
 		assert(pm);
 		DirectMethod* dm = dynamic_cast<DirectMethod*>(pm);
 		assert(dm);
+	}
+}
+
+void PayrollTest::TestChangeMailTransaction()
+{
+	cerr << "Test Change Mail Transaction" << endl;
+
+	int empId = 7;
+	AddSalariedEmployee t(empId, "Kim", "Home", 1000);
+	t.Execute();
+
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	{
+		PaymentMethod* pm = e->GetMethod();
+		assert(pm);
+		HoldMethod* hm = dynamic_cast<HoldMethod*>(pm);
+		assert(hm);
+	}
+	ChangeMailTransaction cmt(empId);
+	cmt.Execute();
+
+	{
+		PaymentMethod* pm = e->GetMethod();
+		assert(pm);
+		MailMethod* mm = dynamic_cast<MailMethod*>(pm);
+		assert(mm);
 	}
 }

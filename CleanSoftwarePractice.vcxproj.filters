@@ -161,6 +161,12 @@
     <ClCompile Include="Employee.cpp">
       <Filter>Types</Filter>
     </ClCompile>
+    <ClCompile Include="ChangeMailTransaction.cpp">
+      <Filter>Transactions\ChangeEmployee\Method</Filter>
+    </ClCompile>
+    <ClCompile Include="MailMethod.cpp">
+      <Filter>Methods</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PayrollTest.h">
@@ -279,6 +285,12 @@
     </ClInclude>
     <ClInclude Include="Employee.h">
       <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeMailTransaction.h">
+      <Filter>Transactions\ChangeEmployee\Method</Filter>
+    </ClInclude>
+    <ClInclude Include="MailMethod.h">
+      <Filter>Methods</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

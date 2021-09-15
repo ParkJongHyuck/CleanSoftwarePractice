@@ -24,6 +24,7 @@ public:
 	void TestChangeCommissionedTransaction();
 
 	void TestChangeDirectTransaction();
+	void TestChangeMailTransaction();
 };
 
 #endif

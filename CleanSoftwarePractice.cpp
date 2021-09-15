@@ -33,4 +33,6 @@ int main()
 
     payrollTest->TestChangeDirectTransaction();
     std::cout << std::endl;
+    payrollTest->TestChangeMailTransaction();
+    std::cout << std::endl;
 }

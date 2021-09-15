@@ -151,6 +151,7 @@
     <ClCompile Include="ChangeDirectTransaction.cpp" />
     <ClCompile Include="ChangeEmployeeTransaction.cpp" />
     <ClCompile Include="ChangeHourlyTransaction.cpp" />
+    <ClCompile Include="ChangeMailTransaction.cpp" />
     <ClCompile Include="ChangeMethodTransaction.cpp" />
     <ClCompile Include="ChangeNameTransaction.cpp" />
     <ClCompile Include="ChangeSalariedTransaction.cpp" />
@@ -161,6 +162,7 @@
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="HoldMethod.cpp" />
     <ClCompile Include="HourlyClassification.cpp" />
+    <ClCompile Include="MailMethod.cpp" />
     <ClCompile Include="MonthlySchedule.cpp" />
     <ClCompile Include="PaymentClassification.cpp" />
     <ClCompile Include="PaymentSchedule.cpp" />
@@ -191,6 +193,7 @@
     <ClInclude Include="ChangeDirectTransaction.h" />
     <ClInclude Include="ChangeEmployeeTransaction.h" />
     <ClInclude Include="ChangeHourlyTransaction.h" />
+    <ClInclude Include="ChangeMailTransaction.h" />
     <ClInclude Include="ChangeMethodTransaction.h" />
     <ClInclude Include="ChangeNameTransaction.h" />
     <ClInclude Include="ChangeSalariedTransaction.h" />
@@ -200,6 +203,7 @@
     <ClInclude Include="Employee.h" />
     <ClInclude Include="HoldMethod.h" />
     <ClInclude Include="HourlyClassification.h" />
+    <ClInclude Include="MailMethod.h" />
     <ClInclude Include="MonthlySchedule.h" />
     <ClInclude Include="PaymentClassification.h" />
     <ClInclude Include="PaymentSchedule.h" />
