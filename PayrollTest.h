@@ -20,6 +20,7 @@ public:
 	void TestChangeAddressTransaction();
 
 	void TestChangeHourlyTransaction();
+	void TestChangeSalariedTransaction();
 };
 
 #endif

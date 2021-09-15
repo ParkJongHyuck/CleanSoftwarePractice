@@ -250,3 +250,27 @@ void PayrollTest::TestChangeHourlyTransaction()
 	WeeklySchedule* ws = dynamic_cast<WeeklySchedule*>(ps);
 	assert(ws);
 }
+
+void PayrollTest::TestChangeSalariedTransaction()
+{
+	cerr << "Test Change Saleried Transaction" << endl;
+
+	int empId = 4;
+	AddHourlyEmployee t(empId, "Cotton", "Home", 7.2);
+	t.Execute();
+
+	ChangeSalariedTransaction cst(empId, 1200);
+	cst.Execute();
+
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	assert(e);
+	PaymentClassification* pc = e->GetClassification();
+	assert(pc);
+	SalariedClassification* sc = dynamic_cast<SalariedClassification*>(pc);
+	assert(sc);
+
+	PaymentSchedule* ps = e->GetSchedule();
+	assert(ps);
+	MonthlySchedule* ms = dynamic_cast<MonthlySchedule*>(ms);
+	assert(ms);
+}
