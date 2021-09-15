@@ -21,7 +21,7 @@
 #include "ServiceCharge.h"
 #include "ChangeNameTransaction.h"
 #include "ChangeAddressTransaction.h"
-
+#include "ChangeHourlyTransaction.h"
 void assert(bool b)
 {
 	static int testNumber = 0;
@@ -245,7 +245,7 @@ void PayrollTest::TestChangeHourlyTransaction()
 	assert(pc);
 	HourlyClassification* hc = dynamic_cast<HourlyClassification*>(pc);
 	assert(hc);
-	assertEquals(27.52, hc->GetRate(), .001);
+	assertEquals(27.52, hc->GetHourlyRate(), .001);
 	PaymentSchedule* ps = e->GetSchedule();
 	WeeklySchedule* ws = dynamic_cast<WeeklySchedule*>(ps);
 	assert(ws);

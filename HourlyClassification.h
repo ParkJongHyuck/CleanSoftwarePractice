@@ -10,16 +10,17 @@ class TimeCard;
 class HourlyClassification : public PaymentClassification
 {
 public:
-	HourlyClassification()
-	{
-
-	}
+	HourlyClassification(float hourlyRate) :itsHourlyRate(hourlyRate) {}
 	virtual ~HourlyClassification();
 
 	void AddTimeCard(TimeCard* tc);
+	
 	TimeCard* GetTimeCard(long date);
+	float GetHourlyRate() const;
+
 private:
 	std::vector<TimeCard*> itsTimeCards;
+	float itsHourlyRate;
 };
 
 #endif

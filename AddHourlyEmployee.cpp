@@ -4,7 +4,7 @@
 
 PaymentClassification* AddHourlyEmployee::GetClassification() const
 {
-    return new HourlyClassification();
+    return new HourlyClassification(itsHourlyRate);
 }
 
 PaymentSchedule* AddHourlyEmployee::GetSchedule() const

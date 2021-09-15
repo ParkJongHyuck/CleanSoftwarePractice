@@ -18,3 +18,8 @@ TimeCard* HourlyClassification::GetTimeCard(long date)
 	else
 		return *timecard;
 }
+
+float HourlyClassification::GetHourlyRate() const
+{
+	return itsHourlyRate;
+}
