@@ -22,4 +22,6 @@ int main()
 
     payrollTest->TestChangeNameTransaction();
     std::cout << std::endl;
+    payrollTest->TestChangeAddressTransaction();
+    std::cout << std::endl;
 }

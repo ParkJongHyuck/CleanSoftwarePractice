@@ -20,6 +20,7 @@
 #include "ServiceChargeTransaction.h"
 #include "ServiceCharge.h"
 #include "ChangeNameTransaction.h"
+#include "ChangeAddressTransaction.h"
 
 void assert(bool b)
 {

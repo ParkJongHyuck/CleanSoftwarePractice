@@ -4,8 +4,6 @@
 #include <string>
 #include "ChangeEmployeeTransaction.h"
 
-class Employee;
-
 class ChangeNameTransaction : public ChangeEmployeeTransaction
 {
 public:

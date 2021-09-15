@@ -128,6 +128,9 @@
     <ClCompile Include="ChangeEmployeeTransaction.cpp">
       <Filter>Transactions\ChangeEmployee</Filter>
     </ClCompile>
+    <ClCompile Include="ChangeAddressTransaction.cpp">
+      <Filter>Transactions\ChangeEmployee</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PayrollTest.h">
@@ -221,6 +224,9 @@
       <Filter>Transactions\ChangeEmployee</Filter>
     </ClInclude>
     <ClInclude Include="ChangeEmployeeTransaction.h">
+      <Filter>Transactions\ChangeEmployee</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeAddressTransaction.h">
       <Filter>Transactions\ChangeEmployee</Filter>
     </ClInclude>
   </ItemGroup>
