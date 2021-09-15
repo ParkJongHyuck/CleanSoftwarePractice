@@ -1,11 +1,11 @@
 #include "SalariedClassification.h"
 
-SalariedClassification::SalariedClassification(double salary) :
+SalariedClassification::SalariedClassification(float salary) :
 	itsSalary(salary)
 {
 }
 
-double const SalariedClassification::GetSalary()
+float const SalariedClassification::GetSalary()
 {
 	return itsSalary;
 }

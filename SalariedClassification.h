@@ -6,10 +6,10 @@
 class SalariedClassification : public PaymentClassification
 {
 public:
-	SalariedClassification(double salary);
-	double const GetSalary();
+	SalariedClassification(float salary);
+	float const GetSalary();
 private:
-	double itsSalary;
+	float itsSalary;
 };
 
 #endif

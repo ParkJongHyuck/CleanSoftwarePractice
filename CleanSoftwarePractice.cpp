@@ -26,4 +26,6 @@ int main()
     std::cout << std::endl;
     payrollTest->TestChangeHourlyTransaction();
     std::cout << std::endl;
+    payrollTest->TestChangeSalariedTransaction();
+    std::cout << std::endl;
 }

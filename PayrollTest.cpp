@@ -22,6 +22,8 @@
 #include "ChangeNameTransaction.h"
 #include "ChangeAddressTransaction.h"
 #include "ChangeHourlyTransaction.h"
+#include "ChangeSalariedTransaction.h"
+
 void assert(bool b)
 {
 	static int testNumber = 0;
@@ -43,7 +45,7 @@ void PayrollTest::TestAddSalariedEmployee()
 	cout << "Add Salaried Employee test" << endl;
 
 	int empId = 1;
-	AddSalariedEmployee t(empId, "Bob", "Home", 1000.00);
+	AddSalariedEmployee t(empId, "Bob", "Home", 1000.00f);
 	t.Execute();
 
 	Employee* e = GpayrollDatabase.GetEmployee(empId);
@@ -53,7 +55,7 @@ void PayrollTest::TestAddSalariedEmployee()
 	SalariedClassification* sc = dynamic_cast<SalariedClassification*>(pc);
 	assert(sc);
 
-	assertEquals(1000.00, sc->GetSalary(), .001);
+	assertEquals(1000.00f, sc->GetSalary(), .001);
 	PaymentSchedule* ps = e->GetSchedule();
 	MonthlySchedule* ms = dynamic_cast<MonthlySchedule*>(ps);
 	assert(ms);
@@ -271,6 +273,6 @@ void PayrollTest::TestChangeSalariedTransaction()
 
 	PaymentSchedule* ps = e->GetSchedule();
 	assert(ps);
-	MonthlySchedule* ms = dynamic_cast<MonthlySchedule*>(ms);
+	MonthlySchedule* ms = dynamic_cast<MonthlySchedule*>(ps);
 	assert(ms);
 }
