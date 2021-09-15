@@ -19,6 +19,8 @@
 #include "UnionAffiliation.h"
 #include "ServiceChargeTransaction.h"
 #include "ServiceCharge.h"
+#include "ChangeNameTransaction.h"
+
 void assert(bool b)
 {
 	static int testNumber = 0;

@@ -19,4 +19,7 @@ int main()
     std::cout << std::endl;
     payrollTest->TestAddServiceCharge();
     std::cout << std::endl;
+
+    payrollTest->TestChangeNameTransaction();
+    std::cout << std::endl;
 }

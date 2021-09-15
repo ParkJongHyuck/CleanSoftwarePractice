@@ -16,6 +16,7 @@ public:
 	void SetSchedule(PaymentSchedule*);
 	void SetMethod(PaymentMethod*);
 	void SetAffiliation(Affiliation*);
+	void SetName(string name);
 
 	PaymentClassification* GetClassification() const;
 	PaymentSchedule* GetSchedule() const;

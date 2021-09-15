@@ -25,6 +25,11 @@ void Employee::SetAffiliation(Affiliation* affiliation)
 	itsAffiliation = affiliation;
 }
 
+void Employee::SetName(string name)
+{
+	itsEmpName = name;
+}
+
 PaymentClassification* Employee::GetClassification() const
 {
 	return itsClassification;

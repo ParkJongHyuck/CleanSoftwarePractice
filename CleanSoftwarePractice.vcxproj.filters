@@ -33,6 +33,9 @@
     <Filter Include="Affiliation">
       <UniqueIdentifier>{f31e26a7-1bc0-4ef2-98a2-da85c2868c92}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Transactions\ChangeEmployee">
+      <UniqueIdentifier>{c697b12d-7bc8-4ddf-a6dd-2829400255de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CleanSoftwarePractice.cpp">
@@ -118,6 +121,12 @@
     </ClCompile>
     <ClCompile Include="ServiceCharge.cpp">
       <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeNameTransaction.cpp">
+      <Filter>Transactions\ChangeEmployee</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeEmployeeTransaction.cpp">
+      <Filter>Transactions\ChangeEmployee</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -207,6 +216,12 @@
     </ClInclude>
     <ClInclude Include="ServiceCharge.h">
       <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeNameTransaction.h">
+      <Filter>Transactions\ChangeEmployee</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeEmployeeTransaction.h">
+      <Filter>Transactions\ChangeEmployee</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
