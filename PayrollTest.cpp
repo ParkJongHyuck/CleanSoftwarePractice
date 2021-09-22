@@ -359,3 +359,23 @@ void PayrollTest::TestChangeMailTransaction()
 		assert(mm);
 	}
 }
+
+void PayrollTest::TestChangeUnAffiliationTransaction()
+{
+	int empId = 7;
+	AddSalariedEmployee t(empId, "Grawk", "HOME", 1200);
+	t.Execute();
+	
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	assert(e);
+
+	ChangeUnAffiliactionTransaction cat(empId);
+	cat.Execute();
+
+	Affiliation* af = e->GetAffiliation();
+	assert(af);
+	NoAffiliation* naf = dynamic_cast<NoAffiliation*>(af);
+	assert(naf);
+}
+
+

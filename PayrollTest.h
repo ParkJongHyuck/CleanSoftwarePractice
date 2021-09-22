@@ -25,6 +25,7 @@ public:
 
 	void TestChangeDirectTransaction();
 	void TestChangeMailTransaction();
+	void TestChangeUnAffiliationTransaction();
 };
 
 #endif
