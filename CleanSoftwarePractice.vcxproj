@@ -146,6 +146,7 @@
     <ClCompile Include="Affiliation.cpp" />
     <ClCompile Include="BiweeklySchedule.cpp" />
     <ClCompile Include="ChangeAddressTransaction.cpp" />
+    <ClCompile Include="ChangeAffiliationTransaction.cpp" />
     <ClCompile Include="ChangeClassificationTransaction.cpp" />
     <ClCompile Include="ChangeCommissionedTransaction.cpp" />
     <ClCompile Include="ChangeDirectTransaction.cpp" />
@@ -155,6 +156,7 @@
     <ClCompile Include="ChangeMethodTransaction.cpp" />
     <ClCompile Include="ChangeNameTransaction.cpp" />
     <ClCompile Include="ChangeSalariedTransaction.cpp" />
+    <ClCompile Include="ChangeUnaffiliatedTransaction.cpp" />
     <ClCompile Include="CleanSoftwarePractice.cpp" />
     <ClCompile Include="CommissionedClassification.cpp" />
     <ClCompile Include="DeleteEmployeeTransaction.cpp" />
@@ -164,6 +166,7 @@
     <ClCompile Include="HourlyClassification.cpp" />
     <ClCompile Include="MailMethod.cpp" />
     <ClCompile Include="MonthlySchedule.cpp" />
+    <ClCompile Include="NoAffiliation.cpp" />
     <ClCompile Include="PaymentClassification.cpp" />
     <ClCompile Include="PaymentSchedule.cpp" />
     <ClCompile Include="PayrollDatabase.cpp" />
@@ -188,6 +191,7 @@
     <ClInclude Include="Affiliation.h" />
     <ClInclude Include="BiweeklySchedule.h" />
     <ClInclude Include="ChangeAddressTransaction.h" />
+    <ClInclude Include="ChangeAffiliationTransaction.h" />
     <ClInclude Include="ChangeClassificationTransaction.h" />
     <ClInclude Include="ChangeCommissionedTransaction.h" />
     <ClInclude Include="ChangeDirectTransaction.h" />
@@ -197,6 +201,7 @@
     <ClInclude Include="ChangeMethodTransaction.h" />
     <ClInclude Include="ChangeNameTransaction.h" />
     <ClInclude Include="ChangeSalariedTransaction.h" />
+    <ClInclude Include="ChangeUnaffiliatedTransaction.h" />
     <ClInclude Include="CommissionedClassification.h" />
     <ClInclude Include="DeleteEmployeeTransaction.h" />
     <ClInclude Include="DirectMethod.h" />
@@ -205,6 +210,7 @@
     <ClInclude Include="HourlyClassification.h" />
     <ClInclude Include="MailMethod.h" />
     <ClInclude Include="MonthlySchedule.h" />
+    <ClInclude Include="NoAffiliation.h" />
     <ClInclude Include="PaymentClassification.h" />
     <ClInclude Include="PaymentSchedule.h" />
     <ClInclude Include="PayrollDatabase.h" />

@@ -45,6 +45,9 @@
     <Filter Include="Transactions\ChangeEmployee\Method">
       <UniqueIdentifier>{33085f85-67ac-4276-9aff-8394c0bdec4a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Transactions\ChangeAffiliation">
+      <UniqueIdentifier>{43512e96-8450-4012-9cff-012b5b714412}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CleanSoftwarePractice.cpp">
@@ -166,6 +169,15 @@
     </ClCompile>
     <ClCompile Include="MailMethod.cpp">
       <Filter>Methods</Filter>
+    </ClCompile>
+    <ClCompile Include="NoAffiliation.cpp">
+      <Filter>Affiliation</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeAffiliationTransaction.cpp">
+      <Filter>Transactions\ChangeAffiliation</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeUnaffiliatedTransaction.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -291,6 +303,15 @@
     </ClInclude>
     <ClInclude Include="MailMethod.h">
       <Filter>Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="NoAffiliation.h">
+      <Filter>Affiliation</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeAffiliationTransaction.h">
+      <Filter>Transactions\ChangeAffiliation</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeUnaffiliatedTransaction.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -28,6 +28,8 @@
 #include "DirectMethod.h"
 #include "ChangeMailTransaction.h"
 #include "MailMethod.h"
+#include "ChangeUnaffiliatedTransaction.h"
+#include "NoAffiliation.h"
 
 void assert(bool b)
 {
@@ -362,6 +364,8 @@ void PayrollTest::TestChangeMailTransaction()
 
 void PayrollTest::TestChangeUnAffiliationTransaction()
 {
+	cerr << "Test Change Unaffiliated Transaction" << endl;
+
 	int empId = 7;
 	AddSalariedEmployee t(empId, "Grawk", "HOME", 1200);
 	t.Execute();
@@ -369,7 +373,7 @@ void PayrollTest::TestChangeUnAffiliationTransaction()
 	Employee* e = GpayrollDatabase.GetEmployee(empId);
 	assert(e);
 
-	ChangeUnAffiliactionTransaction cat(empId);
+	ChangeUnaffiliatedTransaction cat(empId);
 	cat.Execute();
 
 	Affiliation* af = e->GetAffiliation();
