@@ -10,7 +10,7 @@ class ServiceCharge;
 class UnionAffiliation : public Affiliation
 {
 public:
-	UnionAffiliation(float charge) : itsCharge(charge)
+	UnionAffiliation(float dues) : itsDues(dues)
 	{
 
 	}
@@ -20,9 +20,11 @@ public:
 
 	void AddServiceCharge(long date, float charge);
 
+	float GetDues() { return itsDues; }
+
 private:
-	float itsCharge;
 	std::vector<ServiceCharge*> itsServiceCharges;
+	float itsDues;
 };
 
 #endif

@@ -30,6 +30,7 @@
 #include "MailMethod.h"
 #include "ChangeUnaffiliatedTransaction.h"
 #include "NoAffiliation.h"
+#include "ChangeMemberTransaction.h"
 
 void assert(bool b)
 {
@@ -380,6 +381,27 @@ void PayrollTest::TestChangeUnAffiliationTransaction()
 	assert(af);
 	NoAffiliation* naf = dynamic_cast<NoAffiliation*>(af);
 	assert(naf);
+}
+
+void PayrollTest::TestChangeMemberTransaction()
+{
+	cerr << "Test Change Member Transaction" << endl;
+	int empId = 2;
+	int memberId = 7734;
+	AddHourlyEmployee t(empId, "Bill", "Home", 15.25);
+	t.Execute();
+	ChangeMemberTransaction cmt(empId, memberId, 99.42);
+	cmt.Execute();
+	Employee* e = GpayrollDatabase.GetEmployee(empId);
+	assert(e);
+	Affiliation* af = e->GetAffiliation();
+	assert(af);
+	UnionAffiliation* uf = dynamic_cast<UnionAffiliation*>(af);
+	assert(uf);
+	assertEquals(99.42, uf->GetDues(), .001);
+	Employee* member = GpayrollDatabase.GetMember(memberId);
+	assert(member);
+	assert(e == member);
 }
 
 

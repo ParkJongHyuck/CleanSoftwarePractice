@@ -15,8 +15,8 @@ ServiceCharge* UnionAffiliation::GetServiceCharge(long date)
     return *serviceCharge;
 }
 
-void UnionAffiliation::AddServiceCharge(long date, float charge)
+void UnionAffiliation::AddServiceCharge(long date, float amount)
 {
-    ServiceCharge* newServiceCharge = new ServiceCharge(date, charge);
+    ServiceCharge* newServiceCharge = new ServiceCharge(date, amount);
     itsServiceCharges.emplace_back(newServiceCharge);
 }

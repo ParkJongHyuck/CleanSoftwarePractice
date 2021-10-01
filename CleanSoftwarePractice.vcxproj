@@ -153,6 +153,7 @@
     <ClCompile Include="ChangeEmployeeTransaction.cpp" />
     <ClCompile Include="ChangeHourlyTransaction.cpp" />
     <ClCompile Include="ChangeMailTransaction.cpp" />
+    <ClCompile Include="ChangeMemberTransaction.cpp" />
     <ClCompile Include="ChangeMethodTransaction.cpp" />
     <ClCompile Include="ChangeNameTransaction.cpp" />
     <ClCompile Include="ChangeSalariedTransaction.cpp" />
@@ -198,6 +199,7 @@
     <ClInclude Include="ChangeEmployeeTransaction.h" />
     <ClInclude Include="ChangeHourlyTransaction.h" />
     <ClInclude Include="ChangeMailTransaction.h" />
+    <ClInclude Include="ChangeMemberTransaction.h" />
     <ClInclude Include="ChangeMethodTransaction.h" />
     <ClInclude Include="ChangeNameTransaction.h" />
     <ClInclude Include="ChangeSalariedTransaction.h" />

@@ -27,6 +27,7 @@ public:
 	void TestChangeMailTransaction();
 
 	void TestChangeUnAffiliationTransaction();
+	void TestChangeMemberTransaction();
 };
 
 #endif

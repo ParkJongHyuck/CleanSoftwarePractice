@@ -19,7 +19,7 @@ void ServiceChargeTransaction::Execute()
 		UnionAffiliation* uaf = dynamic_cast<UnionAffiliation*>(af);
 		if (uaf)
 		{
-			uaf->AddServiceCharge(itsDate, itsCharge);
+			uaf->AddServiceCharge(itsDate, itsAmount);
 		}
 		else
 		{

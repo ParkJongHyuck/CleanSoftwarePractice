@@ -38,4 +38,6 @@ int main()
 
     payrollTest->TestChangeUnAffiliationTransaction();
     std::cout << std::endl;
+    payrollTest->TestChangeMemberTransaction();
+    std::cout << std::endl;
 }

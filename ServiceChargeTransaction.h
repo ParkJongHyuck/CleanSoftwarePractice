@@ -6,8 +6,8 @@
 class ServiceChargeTransaction : public Transaction
 {
 public:
-	ServiceChargeTransaction(int memberId, long date, float charge) :
-		itsMemberId(memberId), itsDate(date), itsCharge(charge)
+	ServiceChargeTransaction(int memberId, long date, float amount) :
+		itsMemberId(memberId), itsDate(date), itsAmount(amount)
 	{}
 	virtual ~ServiceChargeTransaction();
 
@@ -16,7 +16,7 @@ public:
 private:
 	int itsMemberId;
 	long itsDate;
-	float itsCharge;
+	float itsAmount;
 };
 
 #endif

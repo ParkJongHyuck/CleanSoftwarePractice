@@ -179,6 +179,9 @@
     <ClCompile Include="ChangeUnaffiliatedTransaction.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ChangeMemberTransaction.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PayrollTest.h">
@@ -311,6 +314,9 @@
       <Filter>Transactions\ChangeAffiliation</Filter>
     </ClInclude>
     <ClInclude Include="ChangeUnaffiliatedTransaction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeMemberTransaction.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
