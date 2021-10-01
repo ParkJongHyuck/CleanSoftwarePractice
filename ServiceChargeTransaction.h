@@ -11,7 +11,7 @@ public:
 	{}
 	virtual ~ServiceChargeTransaction();
 
-	virtual void Execute();
+	void Execute();
 
 private:
 	int itsMemberId;

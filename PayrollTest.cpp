@@ -194,10 +194,11 @@ void PayrollTest::TestAddServiceCharge()
 	Employee* e = GpayrollDatabase.GetEmployee(empId);
 	assert(e);
 
-	UnionAffiliation* af = new UnionAffiliation(12.5f);
+	int memberId = 86;
+
+	UnionAffiliation* af = new UnionAffiliation(memberId, 12.5f);
 	e->SetAffiliation(af);
 
-	int memberId = 86;
 	GpayrollDatabase.AddUnionMember(memberId, e);
 	ServiceChargeTransaction sct(memberId, 2001'11'01, 12.95f);
 	sct.Execute();

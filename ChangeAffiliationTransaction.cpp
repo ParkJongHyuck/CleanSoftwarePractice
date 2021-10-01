@@ -5,14 +5,8 @@
 
 extern PayrollDatabase GpayrollDatabase;
 
-void ChangeAffiliationTransaction::Execute()
-{
-	Employee* e = GpayrollDatabase.GetEmployee(itsEmpId);
-	
-}
-
 void ChangeAffiliationTransaction::Change(Employee& e)
 {
-	Affiliation* af = GetAffiliation();
-	e.SetAffiliation(af);
+	RecordMembership(&e);
+	e.SetAffiliation(GetAffiliation());
 }

@@ -12,6 +12,7 @@ public:
 	virtual ~ChangeUnaffiliatedTransaction() {}
 
 	virtual Affiliation* GetAffiliation();
+	virtual void RecordMembership(Employee*);
 };
 
 #endif

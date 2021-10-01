@@ -13,7 +13,7 @@ ServiceChargeTransaction::~ServiceChargeTransaction()
 void ServiceChargeTransaction::Execute()
 {
 	Employee* e = GpayrollDatabase.GetMember(itsMemberId);
-	if (e)
+	if (e != nullptr)
 	{
 		Affiliation* af = e->GetAffiliation();
 		UnionAffiliation* uaf = dynamic_cast<UnionAffiliation*>(af);
@@ -25,9 +25,5 @@ void ServiceChargeTransaction::Execute()
 		{
 			throw("it doesn't have Affiliation");
 		}
-	}
-	else
-	{
-		throw("Invalid member Id");
 	}
 }

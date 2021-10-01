@@ -17,6 +17,7 @@ public:
 
 	virtual void Change(Employee&);
 	virtual Affiliation* GetAffiliation() = 0;
+	virtual void RecordMembership(Employee*) = 0;
 };
 
 #endif
